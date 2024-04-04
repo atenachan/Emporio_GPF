@@ -3,7 +3,7 @@ include_once './connection.php';
 ?>
 <div class="container">
     <?php
-      $query_products = "SELECT product_id, product_name, product_price, product_image FROM products ORDER BY product_id DESC";
+      $query_products = "SELECT product_id, product_name, product_price, product_category, product_image FROM products ORDER BY product_id DESC";
       $result_products = $conn->prepare($query_products);
       $result_products->execute();
 ?>
