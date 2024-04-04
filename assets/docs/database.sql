@@ -1,6 +1,3 @@
-
-DROP DATABASE IF EXISTS gpf
-
 CREATE DATABASE gpf CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 USE gpf;
@@ -40,3 +37,9 @@ INSERT INTO products (product_name, product_description, product_category, produ
 ('Arroz Integral', 'Arroz integral orgânico, fonte de fibras e nutrientes.', 'Alimentos', 4.99, 'arroz_integral.jpg', NOW(), NOW()),
 ('Azeite de Oliva Extra Virgem', 'Azeite de oliva de alta qualidade para temperar saladas e pratos.', 'Alimentos', 9.99, 'azeite_oliva.jpg', NOW(), NOW()),
 ('Chocolate Amargo', 'Chocolate amargo com alto teor de cacau, perfeito para os amantes de chocolate.', 'Alimentos', 3.99, 'chocolate_amargo.jpg', NOW(), NOW());
+
+-- Perfumes
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
+('Perfume Masculino', 'Fragrância masculina com notas amadeiradas e cítricas.', 'Perfumes', 49.99, 'perfume_masculino.jpg', NOW(), NOW()),
+('Perfume Feminino', 'Perfume feminino floral com toques frutados e delicados.', 'Perfumes', 59.99, 'perfume_feminino.jpg', NOW(), NOW()),
+('Perfume Unissex', 'Perfume unissex com aroma refrescante e notas herbais.', 'Perfumes', 39.99, 'perfume_unissex.jpg', NOW(), NOW());

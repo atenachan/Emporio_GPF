@@ -1,0 +1,14 @@
+#ad {
+  background-color: #3b343e;
+  width: 12rem;
+  position: absolute;
+  top: 57.5rem;
+  left: 0;
+  height: 50%;
+  padding-top: 10rem;
+}
+
+#ad h2 {
+  color: white;
+  padding-left: 1rem;
+}

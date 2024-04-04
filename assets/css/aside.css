@@ -1,0 +1,48 @@
+aside {
+  background-color: #610785;
+  width: 10rem;
+  top: 22.6rem;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  padding: 10rem 0 0 2rem;
+}
+
+aside nav {
+  padding: 0 2rem;
+}
+
+aside a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+aside h2 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+ul li input {
+  width: 27%;
+}
+
+ul input {
+  width: 73%;
+}
