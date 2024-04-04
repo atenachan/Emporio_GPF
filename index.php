@@ -47,43 +47,6 @@
   <h2>Propaganda</h2>
 </div>
 
-<?php
-    // Verifica se a categoria foi selecionada no formulário
-    if (isset($_GET['category'])) {
-        // Conexão com o banco de dados
-        $conn = mysqli_connect("localhost", "root", "", "gpf");
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
-
-        // Prepara a consulta SQL
-        $category = $_GET['category'];
-        $sql = "SELECT * FROM products WHERE product_category = '$category'";
-
-        // Executa a consulta SQL
-        $result = mysqli_query($conn, $sql);
-
-        // Verifica se há resultados
-        if (mysqli_num_rows($result) > 0) {
-            // Exibe os resultados
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div>";
-                echo "<h3>" . $row['product_name'] . "</h3>";
-                echo "<p>Description: " . $row['product_description'] . "</p>";
-                echo "<p>Price: $" . $row['product_price'] . "</p>";
-                echo "<img src='" . $row['product_image'] . "' alt='" . $row['product_name'] . "' width='100'>";
-                echo "</div>";
-            }
-        } else {
-            echo "No products found.";
-        }
-
-        // Fecha a conexão com o banco de dados
-        mysqli_close($conn);
-    }
-    ?>
-
-
 <script src="./assets/js/main.js" type="module"></script>
 </body>
 </html>

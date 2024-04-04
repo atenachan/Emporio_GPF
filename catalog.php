@@ -7,7 +7,7 @@ include_once './connection.php';
       $result_products = $conn->prepare($query_products);
       $result_products->execute();
 ?>
-    <div>
+    <div class="products">
   <?php
       while($row_product = $result_products->fetch(PDO::FETCH_ASSOC)){
         extract($row_product);

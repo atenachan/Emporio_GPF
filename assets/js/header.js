@@ -1,4 +1,3 @@
-// navegação
 const catalogLink = document.getElementById("catalogLink");
 const aboutLink = document.getElementById("aboutLink");
 const contactLink = document.getElementById("contactLink");
