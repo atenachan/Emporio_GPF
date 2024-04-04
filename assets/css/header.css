@@ -6,12 +6,7 @@ header {
 }
 
 header img {
-  padding: 0.2rem 0 0 2rem;
-  border-radius: 80%;
-  border: 1px solid #ddd;
-  padding: 5px;
-  width: 17rem;
-  transform: scale(-1px);
+  width: 15rem;
 }
 
 .h form {
