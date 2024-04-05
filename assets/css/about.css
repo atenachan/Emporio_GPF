@@ -1,0 +1,58 @@
+
+article {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para a seção de aside */
+aside {
+    width: 25%;
+    float: right;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+aside h3 {
+    color: #333;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #666;
+}
+
+aside a:hover {
+    color: #000;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ececec;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
