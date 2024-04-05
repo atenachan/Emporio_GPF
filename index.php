@@ -20,7 +20,7 @@
     <a href="#" id="catalogLink">Catálogo</a>
     <a href="#" id="aboutLink">Sobre nós</a>
     <a href="#" id="contactLink">Contato</a>
-    <a href="#" id="premiumLink">Premium</a>
+    <a href="#" id="premiumLink">Premium</a> 
   </nav>
 </header>
 
@@ -48,5 +48,8 @@
 </div>
 
 <script src="./assets/js/main.js" type="module"></script>
+
+
+
 </body>
 </html>

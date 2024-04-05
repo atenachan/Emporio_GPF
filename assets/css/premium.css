@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Adicionando espaço entre os itens */
+}
+
+input[type="radio"] {
+    vertical-align: middle; /* Alinhando verticalmente com o texto */
+    margin-right: 5px; /* Adicionando espaço entre o botão e o texto */
+}
+
+label {
+    display: inline-block; /* Fazendo com que as labels se comportem como blocos */
+    vertical-align: middle; /* Alinhando verticalmente com o botão */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
+}
