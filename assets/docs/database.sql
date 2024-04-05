@@ -9,37 +9,40 @@ CREATE TABLE products (
   product_category VARCHAR(225),
   product_price DOUBLE,
   product_image VARCHAR(225),
-  product_created DATETIME,
-  product_modified DATETIME
+  product_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  
 );
 
 
 -- Eletrônicos
-INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
-('Smartphone', 'Smartphone de última geração com câmera de alta resolução e processador rápido.', 'Eletrônicos', 999.99, 'smartphone.jpg', NOW(), NOW()),
-('Notebook', 'Notebook leve e potente, perfeito para trabalho e entretenimento.', 'Eletrônicos', 1299.99, 'notebook.jpg', NOW(), NOW()),
-('Fone de Ouvido Bluetooth', 'Fone de ouvido sem fio com cancelamento de ruído e longa duração de bateria.', 'Eletrônicos', 149.99, 'fone_de_ouvido.jpg', NOW(), NOW());
-
--- Roupas
-INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
-('Camiseta Masculina', 'Camiseta básica de algodão com gola redonda.', 'Roupas', 19.99, 'camiseta_masculina.jpg', NOW(), NOW()),
-('Vestido Feminino', 'Vestido elegante e confortável para diversas ocasiões.', 'Roupas', 39.99, 'vestido_feminino.jpg', NOW(), NOW()),
-('Calça Jeans', 'Calça jeans moderna e ajustada para um look casual.', 'Roupas', 29.99, 'calca_jeans.jpg', NOW(), NOW());
-
--- Maquiagem
-INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
-('Base Líquida', 'Base líquida de alta cobertura com acabamento matte.', 'Maquiagem', 24.99, 'base_liquida.jpg', NOW(), NOW()),
-('Batom Matte', 'Batom de longa duração com efeito matte em diversas cores.', 'Maquiagem', 12.99, 'batom_matte.jpg', NOW(), NOW()),
-('Paleta de Sombras', 'Paleta de sombras com diversas cores para criar diferentes looks.', 'Maquiagem', 29.99, 'paleta_sombras.jpg', NOW(), NOW());
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created) VALUES
+('Smartphone', 'Smartphone de última geração com câmera de alta resolução e processador rápido.', 'Eletrônicos', '1200.00', 'img/eletronicos/3e.jpg', '2024-03-12 10:11:12'),
+('Notebook', 'Notebook leve e potente, perfeito para trabalho e entretenimento.', 'Eletrônicos', '1754.99', 'img/eletronicos/7e.jpg', '2024-03-11 12:11:12'),
+('Geladeira', 'Geladeira moderna e potênte', 'Eletrônicos', '5654.99', 'img/eletronicos/6e.jpg', '2024-02-15 12:11:12'),
+('Ar condicionado', 'Ar condicionado de alta potência.', 'Eletrônicos','2540.00', 'img/eletronicos/5e.jpg', '2024-04-03 10:15:12');
 
 -- Alimentos
-INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
-('Arroz Integral', 'Arroz integral orgânico, fonte de fibras e nutrientes.', 'Alimentos', 4.99, 'arroz_integral.jpg', NOW(), NOW()),
-('Azeite de Oliva Extra Virgem', 'Azeite de oliva de alta qualidade para temperar saladas e pratos.', 'Alimentos', 9.99, 'azeite_oliva.jpg', NOW(), NOW()),
-('Chocolate Amargo', 'Chocolate amargo com alto teor de cacau, perfeito para os amantes de chocolate.', 'Alimentos', 3.99, 'chocolate_amargo.jpg', NOW(), NOW());
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created) VALUES
+('Vinho', 'Vinho Seco do ano 1850', 'Alimentos', '750.00', 'img/comidas/1c.png', '2024-01-12 10:11:12'),
+('Queijo', 'Queijo amarelo', 'Alimentos', '54.00', 'img/comidas/2c.png', '2024-01-21 12:11:12'),
+('Carne', 'Saborosa carne', 'Alimentos', '41.90', 'img/comidas/4c.png', '2024-03-22 12:11:12'),
+('Biscoito', 'Biscoitos adocicados, Suave e Saboroso', 'Alimentos','14.00', 'img/comidas/5c.png', '2024-01-01 08:15:12');
+
+-- Maquiagem
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created) VALUES
+('Kit Batom', 'Nesse belo Kit contém 3 batons vermelhos, com formato para todos os lábios ', 'Maquiagem', '52.00', 'img/maquiagem/1m.jpg', '2024-02-09 11:11:12'),
+('Delineador', 'Delineador para deixar seus olhos mais marcantes', 'Maquiagem', '23.99', 'img/maquiagem/2m.jpg', '2024-04-01 12:11:12'),
+('Rímel', 'Dê um brilho a mais para seu olhar', 'Maquiagem','19.98', 'img/maquiagem/3m.jpg', '2024-01-05 08:15:12');
 
 -- Perfumes
-INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created, product_modified) VALUES
-('Perfume Masculino', 'Fragrância masculina com notas amadeiradas e cítricas.', 'Perfumes', 49.99, 'perfume_masculino.jpg', NOW(), NOW()),
-('Perfume Feminino', 'Perfume feminino floral com toques frutados e delicados.', 'Perfumes', 59.99, 'perfume_feminino.jpg', NOW(), NOW()),
-('Perfume Unissex', 'Perfume unissex com aroma refrescante e notas herbais.', 'Perfumes', 39.99, 'perfume_unissex.jpg', NOW(), NOW());
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created) VALUES
+('Cherry Blue', 'Perfume Feminino, com notas oceanicas e florais ', 'Perfumes', '215.00', 'img/perfumes/1p.png', '2024-02-02 11:11:12'),
+('Shades of Grey', 'Perfume Masculino com notas metalicas e ambaradas com toque de ambroxan ', 'Perfumes', '311.00', 'img/perfumes/2p.png', '2024-04-01 12:11:12'),
+('Fruit Power', 'Perfume Feminino com notas florais e dulcor de frutas silvestres', 'Perfumes','105.00', 'img/perfumes/3p.png', '2024-01-01 08:15:12');
+
+-- Roupas
+INSERT INTO products (product_name, product_description, product_category, product_price, product_image, product_created) VALUES
+('Vestido Preto', 'Vestico colado na cor preta', 'Roupas', '120.00', 'img/roupas/1r.png', '2024-02-12 10:11:12'),
+('Jaqueta', 'Elegante jaqueta', 'Roupas', '300.00', 'img/roupas/2r.png', '2024-02-06 12:11:12'),
+('Vestido Rosa', 'Vestido elegante rosa', 'Roupas', '142.90', 'img/comidas/4r.png', '2024-02-14 12:11:12');
+
