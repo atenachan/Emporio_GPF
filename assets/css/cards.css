@@ -1,9 +1,11 @@
 .cardcontainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 12rem;
   height: 15.5rem;
-  background-color: #8410d1;
+  background-color: #ffffff;
+  border: 0.5rem solid #42019d;
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
@@ -56,4 +58,9 @@
 
 .card p {
   padding-bottom: 1rem;
+}
+
+.tamanho-img {
+  max-width: 5rem;
+  max-height: 9rem;
 }

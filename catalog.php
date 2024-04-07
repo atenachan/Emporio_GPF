@@ -15,10 +15,10 @@ include_once './connection.php';
       ?>
       <div class="cardcontainer">
                         <div class="card">
-                            <img src='<?php echo "./assets/img/produtos/$product_id/$product_image"; ?>' class="card-img-top" alt="...">
+                            <img class="tamanho-img" src='<?php echo "./assets/img/$product_category/$product_image"; ?>' class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $product_name; ?></h5>
-                                <p class="card-value"><?php echo $product_price; ?></p>
+                                <p class="card-value">R$ <?php echo number_format($product_price, 2, ",", "."); ?></p>
                                 <a href="view-products.php?id=<?php echo $product_id; ?>" class="item-button">Detalhes</a>
                             </div>
                         </div>
