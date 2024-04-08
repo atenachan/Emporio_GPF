@@ -4,12 +4,6 @@ const contactLink = document.getElementById("contactLink");
 const premiumLink = document.getElementById("premiumLink");
 const contentDiv = document.getElementById("content");
 
-document.getElementById("content").innerHTML = fetch("catalog.php")
-  .then((response) => response.text())
-  .then((html) => {
-    contentDiv.innerHTML = html;
-  });
-
 aboutLink.addEventListener("click", function (event) {
   event.preventDefault();
   fetch("about.php")
@@ -22,15 +16,6 @@ aboutLink.addEventListener("click", function (event) {
 contactLink.addEventListener("click", function (event) {
   event.preventDefault();
   fetch("contact.php")
-    .then((response) => response.text())
-    .then((html) => {
-      contentDiv.innerHTML = html;
-    });
-});
-
-catalogLink.addEventListener("click", function (event) {
-  event.preventDefault();
-  fetch("catalog.php")
     .then((response) => response.text())
     .then((html) => {
       contentDiv.innerHTML = html;

@@ -11,9 +11,10 @@
   margin: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.container .products {
+.product-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);

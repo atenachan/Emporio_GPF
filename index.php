@@ -30,13 +30,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <h2>Filtros</h2>
 <form action="" method="GET">
   <ul>
-    <li><input type="checkbox" name="category[]" value="Electronics">Eletronicos</li>
-    <li><input type="checkbox" name="category[]" value="Clothing">Roupas</li>
-    <li><input type="checkbox" name="category[]" value="Makeup">Maquiagem</li>
-    <li><input type="checkbox" name="category[]" value="Perfume">Perfumes</li>
-    <li><input type="checkbox" name="category[]" value="Food">Alimentos</li>
-
-    <input type="submit" value="Filter">
+    <li><input type="checkbox" class="filter-checkbox" value="Eletronicos">Eletronicos</li>
+    <li><input type="checkbox" class="filter-checkbox" value="Roupas">Roupas</li>
+    <li><input type="checkbox" class="filter-checkbox" value="Maquiagem">Maquiagem</li>
+    <li><input type="checkbox" class="filter-checkbox" value="Perfumes">Perfumes</li>
+    <li><input type="checkbox" class="filter-checkbox" value="Alimentos">Alimentos</li>
   </ul>
   </form>
 </aside>
