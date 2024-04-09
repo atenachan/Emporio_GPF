@@ -20,7 +20,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   </div>
   <nav>
     <a href="#" id="catalogLink">Inicio</a>
-    <a href="#" id="aboutLink">Sobre nós</a>
+    <a href="about.php" id="aboutLink">Sobre nós</a>
     <a href="#" id="contactLink">Contato</a>
     <a href="#" id="premiumLink">Premium</a>
   </nav>
