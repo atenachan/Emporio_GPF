@@ -7,7 +7,12 @@ require("index.php");
 $page = array(
     "title" => "Políticas de Privacidade"
 );
+$site = [
+    "sitename" => "Empório GPF",              // Usado na tag <title>
+    "title" => "Empório GPF",                 // Usado na tag <header>
+    "slogan" => "Lendo e entendendo",       // Usado na tag <header>
 
+];
 // Inclui o cabeçalho do documento
 require('_header.php');
 ?>

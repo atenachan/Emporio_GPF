@@ -20,14 +20,3 @@
 
 </html>
 
-
-</main>
-
-<div id="ad">
-    <h2>Propaganda</h2>
-</div>
-
-<!-- <script src="./assets/js/main.js" type="module"></script> -->
-</body>
-
-</html>
