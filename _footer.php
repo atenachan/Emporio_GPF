@@ -11,16 +11,23 @@
     </div>
     <a href="#wrap">
         <i class="fa-solid fa-circle-up fa-fw"></i>
-   ,
+    </a>
 </footer>
-
-</div>
-
-<!-- Importa o JavaScript do tema -->
-<script src="assets/js/index.js"></script>
 
 <!-- Importa o JavaScript específico desta página -->
 <script src="assets/js/<?php echo $page["js"] ?>"></script>
+</body>
+
+</html>
+
+
+</main>
+
+<div id="ad">
+    <h2>Propaganda</h2>
+</div>
+
+<!-- <script src="./assets/js/main.js" type="module"></script> -->
 </body>
 
 </html>

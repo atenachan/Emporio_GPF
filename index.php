@@ -1,52 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <title>Empório GPF</title>
-  
-</head>
-<body>
+<?php
+require('_config.php');
 
-<header>
-  <div class="h">
-    <h1><img src="./assets/img/logo.png" alt="logo do empório gpf"></h1>
-  <form action="/search" method="get">
-    <input type="text" id="search" name="q" placeholder="busque aqui...">
-    <button id="searchButton" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-  </div>
-  <nav>
-    <a href="#" id="catalogLink">Inicio</a>
-    <a href="about.php" id="aboutLink">Sobre nós</a>
-    <a href="#" id="contactLink">Contato</a>
-    <a href="#" id="premiumLink">Premium</a>
-  </nav>
-</header>
+$urlfilters = (isset($_GET['filters'])) ? $_GET['filters'] : '';
+$filters = explode(',', $urlfilters);
 
-<aside>
-<h2>Filtros</h2>
-<form action="" method="GET">
-  <ul>
-    <li><input type="checkbox" class="filter-checkbox" value="Eletronicos">Eletronicos</li>
-    <li><input type="checkbox" class="filter-checkbox" value="Roupas">Roupas</li>
-    <li><input type="checkbox" class="filter-checkbox" value="Maquiagem">Maquiagem</li>
-    <li><input type="checkbox" class="filter-checkbox" value="Perfumes">Perfumes</li>
-    <li><input type="checkbox" class="filter-checkbox" value="Alimentos">Alimentos</li>
-  </ul>
-  </form>
-</aside>
+$sql_filters = '';
+if ($filters[0] !== '') {
+  foreach ($filters as $value) {
+    $sql_filters .= " product_category = '{$value}' OR";
+  }
+}
 
-<main id="content">
+$sql_filters = substr($sql_filters, 0, -2);
+$sql = "SELECT * FROM products";
+if ($sql_filters != '') $sql .= " WHERE {$sql_filters}";
+$res = $conn->query($sql);
 
-</main>
+$htmlcards = '';
+while ($row = $res->fetch_assoc()) :
 
-<div id="ad">
-  <h2>Propaganda</h2>
+  $row['product_price'] = str_replace('.', ',', $row['product_price']);
+
+  $htmlcards .= <<<HTML
+
+    <div class="cardcontainer">
+      <div class="card">
+        <img class="tamanho-img" src="./assets/img/{$row['product_category']}/{$row['product_image']}" alt="{$row['product_name']}" width="100">
+        <div class="card-body">
+        <h3 class="card-title">{$row['product_name']}</h3>
+        <p class="card-value">R$ {$row['product_price']}</p>
+        </div>
+      </div>
+    </div>
+
+  HTML;
+
+
+endwhile;
+
+
+
+
+
+require('_header.php');
+?>
+
+
+
+<div class="product-container">
+<?php echo $htmlcards ?>
 </div>
-
-<script src="./assets/js/main.js" type="module"></script>
-</body>
-</html>
+<?php
+require('_footer.php');

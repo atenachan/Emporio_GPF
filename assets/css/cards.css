@@ -20,6 +20,15 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Adicione regras de mídia para ajustar o layout para entre 6 e 11 itens */
+@media (max-width: 11) {
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
 
 .cardcontainer:hover {

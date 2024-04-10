@@ -9,8 +9,7 @@ CREATE TABLE products (
   product_category VARCHAR(225),
   product_price DOUBLE,
   product_image VARCHAR(225),
-  product_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-  
+  product_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 
