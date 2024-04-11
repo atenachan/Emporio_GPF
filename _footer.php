@@ -7,7 +7,7 @@
     </a>
     <div>
         <div class="year">&copy; 2024</div>
-        <a href="privacy.php" target="_blank">Políticas de Privacidade</a>
+        <a href="privacy.php">Políticas de Privacidade</a>
     </div>
     <a href="#wrap">
         <i class="fa-solid fa-circle-up fa-fw"></i>

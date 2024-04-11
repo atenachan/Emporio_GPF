@@ -1,8 +1,5 @@
 <?php
 
-// Carrega configurações globais
-require("index.php");
-
 // Configurações desta página
 $page = array(
     "title" => "Políticas de Privacidade"
