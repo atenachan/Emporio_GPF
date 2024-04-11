@@ -14,7 +14,7 @@ require('_header.php');
 
 </br>Fique ligado para mais informações sobre o lançamento oficial e como você pode se tornar parte deste novo e emocionante capítulo em nossa jornada. Juntos, vamos explorar novos horizontes de serviço excepcional e satisfação do cliente.
 
-</br>O futuro do serviço premium está chegando</h3>
+</br>O futuro do serviço premium está chegando.</h3>
 </div>
 
 <style>
