@@ -27,7 +27,7 @@
     <aside>
 
 
-        <?php if ($_SERVER['SCRIPT_NAME'] == '/Emporio_GPF/index.php') : ?>
+        <?php if ($_SERVER['SCRIPT_NAME'] == '/index.php') : ?>
 
             <h2>Filtros</h2>
             <form action="/" method="GET" id="form">
