@@ -27,7 +27,7 @@
     <aside>
 
 
-        <?php if ($_SERVER['SCRIPT_NAME'] == '/index.php') : ?>
+        <?php if ($_SERVER['SCRIPT_NAME'] == '/Emporio_GPF/index.php') : ?>
 
             <h2>Filtros</h2>
             <form action="/" method="GET" id="form">
@@ -41,6 +41,16 @@
                 <button type="button" id="submitButton">Exibir</button>
             </form>
 
+                <form id="orderForm">
+                    <label>Ordenar por preço:</label>
+                    <div>
+                    <button type="button" id="ascButton" class="orderButton"><i class="fa-solid fa-arrow-up"></i></button>
+                    <button type="button" id="descButton" class="orderButton"><i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                    <input type="hidden" name="order" id="orderInput">
+                </form>
+
+
             <script>
                 document.getElementById('submitButton').addEventListener('click', function() {
                     const checkedValues = Array.from(document.querySelectorAll('.filter-checkbox:checked'))
@@ -51,13 +61,48 @@
                     const newUrl = window.location.pathname + '?' + queryString;
                     window.location.href = newUrl;
                 });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const ascButton = document.getElementById('ascButton');
+                    const descButton = document.getElementById('descButton');
+                    const orderInput = document.getElementById('orderInput');
+
+                    orderInput.value = 'random';
+
+                    ascButton.addEventListener('click', function () {
+                        orderInput.value = 'asc';
+                        updateUrlAndReload();
+                    });
+
+                descButton.addEventListener('click', function () {
+                    orderInput.value = 'desc';
+                    updateUrlAndReload();
+                });
+
+                function updateUrlAndReload() {
+                    const currentUrl = new URL(window.location.href);
+                    currentUrl.searchParams.set('order', orderInput.value);
+                    window.location.href = currentUrl.toString();
+                }
+                });
+
             </script>
 
         <?php else : ?>
 
-            <p>biscoitoS</p>
+            <p class="cookie">Anuncios</p>
+
+            <style>
+                .cookie {
+                    color: #ffff;
+                }
+                aside {
+                    height: 70%;
+                }
+            </style>
 
         <?php endif; ?>
+
 
     </aside>
 

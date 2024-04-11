@@ -3,6 +3,7 @@
 @import url(ads.css);
 @import url(cards.css);
 @import url(contact.css);
+@import url(footer.css);
 
 * {
   padding: 0;
@@ -12,6 +13,9 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {

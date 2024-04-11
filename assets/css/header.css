@@ -7,6 +7,9 @@ header {
 
 header img {
   width: 15rem;
+  position: absolute;
+  left: -2rem;
+  top: -3rem;
 }
 
 .h form {
@@ -48,8 +51,8 @@ header nav {
   display: flex;
   justify-content: right;
   background-color: #610785;
-  padding: 1rem;
-  margin-top: 0.5rem;
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: -3rem;
 }
 
 nav a {

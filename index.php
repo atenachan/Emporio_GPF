@@ -16,6 +16,23 @@ $sql = "SELECT * FROM products";
 if ($sql_filters != '') $sql .= " WHERE {$sql_filters}";
 $res = $conn->query($sql);
 
+$order = isset($_GET['order']) ? $_GET['order'] : 'random';
+
+$sql = "SELECT * FROM products";
+if ($sql_filters != '') {
+  $sql .= " WHERE {$sql_filters}";
+}
+
+if ($order == 'random') {
+  $sql .= " ORDER BY RAND()";
+} elseif ($order == 'asc') {
+  $sql .= " ORDER BY product_price ASC";
+} elseif ($order == 'desc') {
+  $sql .= " ORDER BY product_price DESC";
+}
+
+$res = $conn->query($sql);
+
 $htmlcards = '';
 while ($row = $res->fetch_assoc()) :
 
