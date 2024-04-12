@@ -17,10 +17,11 @@
 
         </div>
         <nav>
-            <a href="index.php" id="catalogLink">Inicio</a>
-            <a href="about.php" id="aboutLink">Sobre nós</a>
-            <a href="contact.php" id="contactLink">Contato</a>
-            <a href="premium.php" id="premiumLink">Premium</a>
+            <a href="index.php" class="rightlink" id="catalogLink">Inicio</a>
+            <a href="about.php" class="rightlink" id="aboutLink">Sobre nós</a>
+            
+            <a href="contact.php" class="leftlink" id="contactLink">Contato</a>
+            <a href="premium.php" class="leftlink" id="premiumLink">Premium</a>
         </nav>
     </header>
 
@@ -42,7 +43,7 @@
             </form>
 
                 <form id="orderForm">
-                    <label>Ordenar por preço:</label>
+                    <label id="orden">Ordenar por preço:</label>
                     <div>
                     <button type="button" id="ascButton" class="orderButton"><i class="fa-solid fa-arrow-up"></i></button>
                     <button type="button" id="descButton" class="orderButton"><i class="fa-solid fa-arrow-down"></i></button>
