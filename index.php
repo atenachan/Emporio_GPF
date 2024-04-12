@@ -55,10 +55,6 @@ while ($row = $res->fetch_assoc()) :
 
 endwhile;
 
-
-
-
-
 require('_header.php');
 ?>
 

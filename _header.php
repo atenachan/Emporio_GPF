@@ -50,6 +50,7 @@
                     <input type="hidden" name="order" id="orderInput">
                 </form>
 
+                
 
             <script>
                 document.getElementById('submitButton').addEventListener('click', function() {
@@ -87,6 +88,9 @@
                 });
 
             </script>
+
+
+
 
         <?php else : ?>
 

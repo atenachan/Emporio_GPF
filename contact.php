@@ -23,5 +23,13 @@ require('_header.php') ?>
 
   </form>
 
+  <div class="links">
+    <a href="https://www.instagram.com/emporiogpf/?next=%2F" target="_blank"><i class="fa-brands fa-instagram fa-2x" style="color: #fbd5f6;" ></i></a>
+    <a href="" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #fbd5f6;"></i></a>
+    <a href="" target="_blank"><i class="fa-brands fa-steam fa-2x" style="color: #fbd5f6;"></i></a>
+    <a href="" target="_blank"><i class="fab fa-facebook fa-fw fa-2x" style="color: #fbd5f6;"></i></a>
+
+</div>
+
 
 <?php require('_footer.php') ?>
