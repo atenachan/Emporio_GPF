@@ -12,20 +12,22 @@ textarea {
 }
 
 .contact input[type="submit"] {
-  background-color: #dfbfde;
-  color: rgb(190, 106, 197);
+  background-color: rgba(203, 144, 226, 0.651);
+  color: rgb(31, 9, 32);
   padding: 12px 20px;
   border: none;
+  text-transform: uppercase;
+  font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .contact input[type="submit"]:hover {
-  background-color: #d5aad6;
+  background-color: #bf85c0;
 }
 
 .contact {
   border-radius: 5px;
-  background-color: #e7bde7;
+  background-color: #E5BBF6;
   padding: 20px;
 }
