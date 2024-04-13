@@ -12,8 +12,8 @@ textarea {
 }
 
 .contact input[type="submit"] {
-  background-color: #dfbfde;
-  color: rgb(190, 106, 197);
+  background-color: #dfabf5;
+  color: rgb(0, 0, 0);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -21,12 +21,12 @@ textarea {
 }
 
 .contact input[type="submit"]:hover {
-  background-color: #d5aad6;
+  background-color: #f3c4df;
 }
 
 .contact {
   border-radius: 5px;
-  background-color: #e7bde7;
+  background-color: #9d0cf1fb;
   padding: 20px;
 }
 
